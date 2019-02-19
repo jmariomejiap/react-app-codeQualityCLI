@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "9"
+
+install:
+  - npm install
+
+services: mongodb
+
+script:
+  - npm run test
+  - npm run coverage-report
+  - npm run report-codeQuality
